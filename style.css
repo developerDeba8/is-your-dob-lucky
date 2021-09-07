@@ -13,8 +13,7 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    width: 50vw;
-    height: 95vh;
+    max-width: 500px;
     margin: auto;
     background-color: var(--primary-color);
 }
@@ -51,7 +50,8 @@ input {
 
 #message {
     width: 80%;
-    margin: 0rem auto;
+    margin: auto;
+    margin-bottom: 2rem;
     padding: 0.5rem;
     font-family: 'Pacifico', cursive;
     font-size: large;
