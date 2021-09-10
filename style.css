@@ -1,21 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-body {
-    font-family: 'Pacifico', cursive;
-}
-
 :root {
     --primary-color: #86bd08;
 
 }
+
+body {
+    font-family: 'Pacifico', cursive;
+    background-color: var(--primary-color);
+}
+
+
 
 
 .container {
     display: flex;
     flex-direction: column;
     max-width: 500px;
-    margin: auto;
-    background-color: var(--primary-color);
+    margin: auto; 
+    text-align: center;
 }
 
 #header {

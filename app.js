@@ -30,10 +30,10 @@ function checkBirthDateIsLucky() {
 
     if (sumOfDob % luckyNum === 0) {
         message.style.display = "block";
-        message.innerText = "Your Birth Date is Lucky! 😜";
+        message.innerText = "Your Birth Date is Lucky! 😜🎉";
     } else {
         message.style.display = "block";
-        message.innerText = "Sorry you are unlucky!";
+        message.innerText = "Sorry you are unlucky!😔";
     }
 }
 
