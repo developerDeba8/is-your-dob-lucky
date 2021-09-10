@@ -5,7 +5,6 @@ var message = document.querySelector("#message");
 
 
 function sumOfBirthDate(dob) {
-
     dob = dob.replaceAll("-", "");
     var sum = 0;
     for (let i = 0; i < dob.length; i++) {
@@ -17,15 +16,22 @@ function sumOfBirthDate(dob) {
 
 function checkBirthDateIsLucky() {
     message.style.display = "none";
-    var dob = dateOfBirth.value;
+    const dob = dateOfBirth.value;
+    const luckyNum = luckyNumber.value;
+    
+    if(dob == "" || luckyNum == ""){
+        message.style.display = "block";
+        message.innerText = "Please enter both fields";
+        return;
+    }
+
     var sumOfDob = sumOfBirthDate(dob);
 
-    if (sumOfDob % luckyNumber.value === 0) {
 
+    if (sumOfDob % luckyNum === 0) {
         message.style.display = "block";
         message.innerText = "Your Birth Date is Lucky! 😜";
     } else {
-
         message.style.display = "block";
         message.innerText = "Sorry you are unlucky!";
     }
